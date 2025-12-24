@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>DaveTutors | Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-slate-50 min-h-screen">
+
+  <header class="bg-blue-600 text-white p-4 flex justify-between">
+    <h1 class="font-bold">DaveTutors Dashboard</h1>
+    <button id="logout" class="bg-red-500 px-3 py-1 rounded">Logout</button>
+  </header>
+
+  <main class="p-6 max-w-4xl mx-auto">
+    <h2 class="text-xl font-semibold mb-4">Assignments & Grades</h2>
+
+    <div id="grades" class="space-y-2"></div>
+
+    <p class="mt-4 font-bold">
+      Average: <span id="avg">--</span>%
+    </p>
+
+    <div class="mt-8 bg-white p-4 rounded shadow">
+      <h3 class="font-semibold">Sunday Test (Locked)</h3>
+      <input id="testPass" placeholder="Password"
+        class="border p-2 rounded mt-2" />
+      <button id="unlock"
+        class="ml-2 bg-blue-600 text-white px-3 py-2 rounded">
+        Unlock
+      </button>
+      <p id="status" class="mt-2"></p>
+    </div>
+  </main>
+
+  <script type="module" src="./dashboard.js"></script>
+</body>
+</html>
